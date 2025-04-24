@@ -8,6 +8,7 @@ import { Letter } from '@/utils/types';
 type Card = Letter & {
   id: number;
   isMatched: boolean;
+  isFlipped: boolean;
 };
 
 const LetterMemoryGame: React.FC = () => {
@@ -46,9 +47,9 @@ const LetterMemoryGame: React.FC = () => {
       .slice(0, cardCount / 2);
 
     // Create pairs of cards
-    const gamePairs = selectedLetters.flatMap(letter => [
-      { ...letter, id: Math.random(), isMatched: false },
-      { ...letter, id: Math.random(), isMatched: false }
+    const gamePairs = selectedLetters.flatMap((letter, index) => [
+      { ...letter, id: index * 2, isMatched: false, isFlipped: false },
+      { ...letter, id: index * 2 + 1, isMatched: false, isFlipped: false }
     ]);
 
     // Shuffle the pairs
@@ -86,6 +87,11 @@ const LetterMemoryGame: React.FC = () => {
     // Speak the letter when card is flipped
     speakLetter(cards[cardIndex].character);
 
+    // Update card state
+    const newCards = [...cards];
+    newCards[cardIndex].isFlipped = true;
+    setCards(newCards);
+
     const newFlippedCards = [...flippedCards, cardIndex];
     setFlippedCards(newFlippedCards);
 
@@ -111,6 +117,14 @@ const LetterMemoryGame: React.FC = () => {
           setGameWon(true);
           setIsPlaying(false);
         }
+      } else {
+        // No match - flip cards back after delay
+        setTimeout(() => {
+          const resetCards = [...cards];
+          resetCards[firstCardIndex].isFlipped = false;
+          resetCards[secondCardIndex].isFlipped = false;
+          setCards(resetCards);
+        }, 1000);
       }
       
       // Clear flipped cards after delay
@@ -182,20 +196,20 @@ const LetterMemoryGame: React.FC = () => {
 
         {/* Game Board */}
         <div className={`grid ${getGridCols()} gap-3 mb-6 w-full max-w-[90vw] place-items-center`}>
-          {cards.map((card) => (
+          {cards.map((card, index) => (
             <motion.div
               key={card.id}
               className={`aspect-[3/2] w-full cursor-pointer rounded-xl shadow-lg overflow-hidden ${
                 card.isMatched ? 'opacity-90' : ''
               }`}
-              onClick={() => handleCardClick(card.id)}
+              onClick={() => handleCardClick(index)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <motion.div
                 className="w-full h-full relative"
                 style={{ transformStyle: 'preserve-3d' }}
-                animate={{ rotateY: card.isMatched ? 180 : 0 }}
+                animate={{ rotateY: card.isFlipped || card.isMatched ? 180 : 0 }}
                 transition={{ duration: 0.5 }}
               >
                 {/* Card Back */}

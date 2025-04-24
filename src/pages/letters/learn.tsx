@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import BigButton from '@/components/BigButton';
-import { letters } from '@/utils/letterData';
+import { letters } from '@/utils/data/letters';
 import { Letter } from '@/utils/types';
 
 const LearnLetters: React.FC = () => {
@@ -106,19 +106,19 @@ const LearnLetters: React.FC = () => {
       <div className="absolute top-4 left-4">
         <button
           onClick={() => router.push('/')}
-          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-10 py-6 rounded-full shadow-lg transition-all duration-200 text-7xl font-bold hover:scale-105 transform flex items-center gap-3"
+          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-4 rounded-full shadow-lg transition-all duration-200 text-2xl font-bold hover:scale-105 transform flex items-center gap-3"
         >
           <span>🏠</span> Home
         </button>
       </div>
 
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-pink-600 mb-8 animate-bounce-slow">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-pink-600 mb-8 animate-bounce-slow">
           📚 Learn Letters! 📚
         </h1>
 
         <div className="flex flex-col items-center w-full">
-          <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl mb-6 flex flex-col items-center justify-between min-h-[380px] sm:min-h-[420px]">
+          <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-3xl mb-8 flex flex-col items-center justify-between min-h-[420px] sm:min-h-[480px]">
             <motion.div
               key={currentLetterIndex}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -128,17 +128,17 @@ const LearnLetters: React.FC = () => {
               className="relative cursor-pointer w-full flex flex-col items-center"
               onClick={handleLetterClick}
             >
-              <div className="text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-bold text-purple-600 mb-8">
+              <div className="text-9xl sm:text-[11rem] md:text-[13rem] lg:text-[15rem] font-bold text-purple-600 mb-8">
                 {currentLetter.character}
               </div>
               <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg" />
             </motion.div>
 
-            <div className="text-center w-full max-w-md">
-              <h2 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-3 break-words">
+            <div className="text-center w-full max-w-2xl">
+              <h2 className="text-4xl sm:text-5xl font-bold text-purple-700 mb-4 break-words">
                 {currentLetter.example}
               </h2>
-              <p className="text-xl sm:text-2xl text-gray-600 break-words leading-relaxed mb-3">
+              <p className="text-2xl sm:text-3xl text-gray-600 break-words leading-relaxed mb-4">
                 {currentLetter.funFact}
               </p>
             </div>
@@ -146,19 +146,19 @@ const LearnLetters: React.FC = () => {
             <div className="flex-grow"></div>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center w-full max-w-2xl mb-4">
+          <div className="flex flex-wrap gap-6 justify-center w-full max-w-3xl mb-6">
             <BigButton
               icon="⬅️"
               onClick={handlePrevious}
               disabled={isFirstLetter}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-8xl px-14 py-8"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6"
             >
               Previous
             </BigButton>
             <BigButton
               icon="🔊"
               onClick={speakLetterInfo}
-              className={`shadow-md hover:scale-105 transform transition-all duration-200 text-8xl px-14 py-8 ${
+              className={`shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6 ${
                 isSpeaking 
                   ? "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
                   : "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
@@ -170,7 +170,7 @@ const LearnLetters: React.FC = () => {
               icon="➡️"
               onClick={handleNext}
               disabled={isLastLetter}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-8xl px-14 py-8"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6"
             >
               Next
             </BigButton>
