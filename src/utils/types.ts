@@ -21,16 +21,17 @@ export interface Number extends LearningItem {
   word: string; // Word form (e.g., "three")
 }
 
-export interface Letter extends LearningItem {
+export type Letter = {
   type: 'letter';
-  letter: string;
-  imageUrl: string;
-  description: string;
+  name: string;
+  character: string;
+  upperCase: string;
+  lowerCase: string;
+  phonetic: string;
   example: string;
   funFact: string;
-  funFactReference: string;
-  soundUrl: string;
-}
+  funFactReference?: string;
+};
 
 // Learning area configuration
 export interface LearningArea {

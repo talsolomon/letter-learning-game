@@ -2,40 +2,37 @@ import { Letter } from '../types';
 
 export const letters: Letter[] = [
   {
-    id: 'a',
     type: 'letter',
     name: 'Letter A',
     character: 'A',
     upperCase: 'A',
     lowerCase: 'a',
     phonetic: '/eɪ/',
-    exampleWord: 'Apple',
-    funFact: 'A is the first letter of the alphabet and comes from the ancient Egyptian hieroglyph of an ox!',
-    funFactReference: 'https://www.etymonline.com/word/A'
+    example: 'Apple starts with A',
+    funFact: 'A is the first letter of the alphabet and comes from the Phoenician letter aleph, meaning ox.',
+    funFactReference: 'https://www.britannica.com/topic/A-letter'
   },
   {
-    id: 'b',
     type: 'letter',
     name: 'Letter B',
     character: 'B',
     upperCase: 'B',
     lowerCase: 'b',
     phonetic: '/biː/',
-    exampleWord: 'Banana',
-    funFact: 'The letter B started as a picture of a house in ancient Egyptian hieroglyphs!',
-    funFactReference: 'https://www.etymonline.com/word/B'
+    example: 'Ball starts with B',
+    funFact: 'The letter B comes from the Egyptian hieroglyph for house.',
+    funFactReference: 'https://www.britannica.com/topic/B-letter'
   },
   {
-    id: 'c',
     type: 'letter',
     name: 'Letter C',
     character: 'C',
     upperCase: 'C',
     lowerCase: 'c',
     phonetic: '/siː/',
-    exampleWord: 'Cat',
-    funFact: 'The letter C was originally shaped like a stick figure in ancient Phoenician!',
-    funFactReference: 'https://www.etymonline.com/word/C'
+    example: 'Cat starts with C',
+    funFact: 'C was originally the same letter as G in the ancient alphabet.',
+    funFactReference: 'https://www.britannica.com/topic/C-letter'
   },
-  // Add more letters...
+  // Add more letters as needed
 ]; 
