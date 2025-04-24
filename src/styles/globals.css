@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --accent-color: #FFE66D;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background: linear-gradient(135deg, #FFE5D9 0%, #FFCAD4 50%, #F3E1E1 100%);
+}
+
+@layer components {
+  .child-friendly-text {
+    @apply text-4xl font-bold text-purple-800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .child-friendly-button {
+    @apply px-8 py-6 rounded-full text-3xl font-bold shadow-lg 
+           transform transition-all duration-300 hover:scale-105;
+  }
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+} 

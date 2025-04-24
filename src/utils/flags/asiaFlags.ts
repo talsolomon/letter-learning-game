@@ -1,0 +1,165 @@
+import { Flag } from '../types';
+
+export const asiaFlags: Flag[] = [
+  {
+    country: "Japan",
+    flagUrl: "https://flagcdn.com/w320/jp.png",
+    description: "A white rectangle with a red circle in the center representing the sun!",
+    region: "Asia",
+    capital: "Tokyo",
+    population: "125 million",
+    language: "Japanese",
+    funFact: "The Japanese flag is called 'Nisshōki' which means 'sun-mark flag'!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Japan"
+  },
+  {
+    country: "China",
+    flagUrl: "https://flagcdn.com/w320/cn.png",
+    description: "A red field with five yellow stars in the canton!",
+    region: "Asia",
+    capital: "Beijing",
+    population: "1.4 billion",
+    language: "Chinese",
+    funFact: "The large star represents the Communist Party, and the four smaller stars represent the social classes!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-China"
+  },
+  {
+    country: "India",
+    flagUrl: "https://flagcdn.com/w320/in.png",
+    description: "Three horizontal bands of saffron, white, and green with a blue wheel in the center!",
+    region: "Asia",
+    capital: "New Delhi",
+    population: "1.4 billion",
+    language: "Hindi, English",
+    funFact: "The wheel in the center is called the Ashoka Chakra and represents the wheel of law!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-India"
+  },
+  {
+    country: "South Korea",
+    flagUrl: "https://flagcdn.com/w320/kr.png",
+    description: "A white field with a red and blue circle in the center and black trigrams!",
+    region: "Asia",
+    capital: "Seoul",
+    population: "51.7 million",
+    language: "Korean",
+    funFact: "The circle represents balance, and the trigrams represent the elements!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-South-Korea"
+  },
+  {
+    country: "Vietnam",
+    flagUrl: "https://flagcdn.com/w320/vn.png",
+    description: "A red field with a large yellow star in the center!",
+    region: "Asia",
+    capital: "Hanoi",
+    population: "97.3 million",
+    language: "Vietnamese",
+    funFact: "The five points of the star represent farmers, workers, intellectuals, youth, and soldiers!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Vietnam"
+  },
+  {
+    country: "Thailand",
+    flagUrl: "https://flagcdn.com/w320/th.png",
+    description: "Five horizontal stripes of red, white, blue, white, and red!",
+    region: "Asia",
+    capital: "Bangkok",
+    population: "69.8 million",
+    language: "Thai",
+    funFact: "The colors represent nation-religion-monarchy!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Thailand"
+  },
+  {
+    country: "Indonesia",
+    flagUrl: "https://flagcdn.com/w320/id.png",
+    description: "Two horizontal bands of red and white!",
+    region: "Asia",
+    capital: "Jakarta",
+    population: "273.5 million",
+    language: "Indonesian",
+    funFact: "The colors come from the banner of the 13th-century Majapahit Empire!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Indonesia"
+  },
+  {
+    country: "Malaysia",
+    flagUrl: "https://flagcdn.com/w320/my.png",
+    description: "Red and white stripes with a blue canton containing a crescent moon and star!",
+    region: "Asia",
+    capital: "Kuala Lumpur",
+    population: "32.7 million",
+    language: "Malay",
+    funFact: "The stripes represent the equal status of the member states!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Malaysia"
+  },
+  {
+    country: "Singapore",
+    flagUrl: "https://flagcdn.com/w320/sg.png",
+    description: "Two horizontal bands of red and white with a crescent moon and five stars!",
+    region: "Asia",
+    capital: "Singapore",
+    population: "5.7 million",
+    language: "English, Malay, Mandarin, Tamil",
+    funFact: "The five stars represent democracy, peace, progress, justice, and equality!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Singapore"
+  },
+  {
+    country: "Philippines",
+    flagUrl: "https://flagcdn.com/w320/ph.png",
+    description: "Two horizontal bands of blue and red with a white triangle and golden sun with stars!",
+    region: "Asia",
+    capital: "Manila",
+    population: "109.6 million",
+    language: "Filipino, English",
+    funFact: "The flag is flown upside down when the country is at war!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-the-Philippines"
+  },
+  {
+    country: "Israel",
+    flagUrl: "https://flagcdn.com/w320/il.png",
+    description: "A white field with two horizontal blue stripes and a blue Star of David!",
+    region: "Asia",
+    capital: "Jerusalem",
+    population: "9.3 million",
+    language: "Hebrew, Arabic",
+    funFact: "The design is based on the traditional Jewish prayer shawl!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Israel"
+  },
+  {
+    country: "Saudi Arabia",
+    flagUrl: "https://flagcdn.com/w320/sa.png",
+    description: "A green field with Arabic text and a sword in white!",
+    region: "Asia",
+    capital: "Riyadh",
+    population: "35.3 million",
+    language: "Arabic",
+    funFact: "The flag is never flown at half-mast as it contains religious text!"
+  },
+  {
+    country: "United Arab Emirates",
+    flagUrl: "https://flagcdn.com/w320/ae.png",
+    description: "Three horizontal stripes of green, white, and black with a red vertical band!",
+    region: "Asia",
+    capital: "Abu Dhabi",
+    population: "9.9 million",
+    language: "Arabic",
+    funFact: "The colors represent Arab unity and prosperity!"
+  },
+  {
+    country: "Iran",
+    flagUrl: "https://flagcdn.com/w320/ir.png",
+    description: "Three horizontal bands of green, white, and red with an emblem in the center!",
+    region: "Asia",
+    capital: "Tehran",
+    population: "85 million",
+    language: "Persian",
+    funFact: "The emblem in the center represents the word 'Allah'!"
+  },
+  {
+    country: "Pakistan",
+    flagUrl: "https://flagcdn.com/w320/pk.png",
+    description: "A dark green field with a white crescent moon and star!",
+    region: "Asia",
+    capital: "Islamabad",
+    population: "220.9 million",
+    language: "Urdu, English",
+    funFact: "The white stripe represents religious minorities!"
+  }
+]; 
