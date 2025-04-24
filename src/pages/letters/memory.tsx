@@ -2,15 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import BigButton from '@/components/BigButton';
-import { letters } from '@/utils/letterData';
+import { letters } from '@/utils/data/letters';
 import { Letter } from '@/utils/types';
 
-interface Card {
+type Card = Letter & {
   id: number;
-  letter: Letter;
-  isFlipped: boolean;
   isMatched: boolean;
-}
+};
 
 const LetterMemoryGame: React.FC = () => {
   const router = useRouter();
@@ -22,6 +20,8 @@ const LetterMemoryGame: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [cardCount, setCardCount] = useState<8 | 16 | 36 | 64>(8);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [matchedPairs, setMatchedPairs] = useState<string[]>([]);
+  const [uniqueLetters, setUniqueLetters] = useState<string[]>([]);
 
   // Initialize game
   useEffect(() => {
@@ -40,23 +40,28 @@ const LetterMemoryGame: React.FC = () => {
   }, [isPlaying, gameWon]);
 
   const startNewGame = () => {
-    // Select random letters based on card count
-    const pairCount = cardCount / 2;
+    // Randomly select letters based on card count
     const selectedLetters = [...letters]
       .sort(() => Math.random() - 0.5)
-      .slice(0, pairCount);
-    
-    const cardPairs = selectedLetters.flatMap((letter, index) => [
-      { id: index * 2, letter, isFlipped: false, isMatched: false },
-      { id: index * 2 + 1, letter, isFlipped: false, isMatched: false }
+      .slice(0, cardCount / 2);
+
+    // Create pairs of cards
+    const gamePairs = selectedLetters.flatMap(letter => [
+      { ...letter, id: Math.random(), isMatched: false },
+      { ...letter, id: Math.random(), isMatched: false }
     ]);
 
-    setCards(cardPairs.sort(() => Math.random() - 0.5));
+    // Shuffle the pairs
+    const shuffledCards = gamePairs.sort(() => Math.random() - 0.5);
+
+    setCards(shuffledCards);
     setFlippedCards([]);
-    setMoves(0);
+    setMatchedPairs([]);
     setGameWon(false);
+    setMoves(0);
     setTimer(0);
     setIsPlaying(true);
+    setUniqueLetters(selectedLetters.map(l => l.character));
   };
 
   const speakLetter = (letter: string) => {
@@ -66,51 +71,52 @@ const LetterMemoryGame: React.FC = () => {
     }
   };
 
-  const handleCardClick = (cardId: number) => {
-    const cardIndex = cards.findIndex(card => card.id === cardId);
-    if (cardIndex === -1 || flippedCards.length >= 2 || cards[cardIndex].isFlipped || cards[cardIndex].isMatched) {
+  const handleCardClick = (cardIndex: number) => {
+    if (
+      flippedCards.length === 2 || // Don't allow more than 2 cards flipped
+      flippedCards.includes(cardIndex) || // Don't allow same card to be flipped
+      cards[cardIndex].isMatched // Don't allow matched cards to be flipped
+    ) {
       return;
     }
 
-    const newCards = [...cards];
-    newCards[cardIndex].isFlipped = true;
-    setCards(newCards);
-    
+    // Increment moves counter
+    setMoves(moves + 1);
+  
     // Speak the letter when card is flipped
-    speakLetter(cards[cardIndex].letter.letter);
+    speakLetter(cards[cardIndex].character);
 
     const newFlippedCards = [...flippedCards, cardIndex];
     setFlippedCards(newFlippedCards);
 
+    // If this is the second card flipped
     if (newFlippedCards.length === 2) {
-      setMoves(prev => prev + 1);
       const [firstCardIndex, secondCardIndex] = newFlippedCards;
-      
-      if (cards[firstCardIndex].letter.letter === cards[secondCardIndex].letter.letter) {
-        // Match found
-        setTimeout(() => {
-          const matchedCards = [...cards];
-          matchedCards[firstCardIndex].isMatched = true;
-          matchedCards[secondCardIndex].isMatched = true;
-          setCards(matchedCards);
-          setFlippedCards([]);
+      const firstCard = cards[firstCardIndex];
+      const secondCard = cards[secondCardIndex];
 
-          // Check if all cards are matched
-          if (matchedCards.every(card => card.isMatched)) {
-            setGameWon(true);
-            setIsPlaying(false);
-          }
-        }, 500);
-      } else {
-        // No match - wait 1 second before flipping back
-        setTimeout(() => {
-          const resetCards = [...cards];
-          resetCards[firstCardIndex].isFlipped = false;
-          resetCards[secondCardIndex].isFlipped = false;
-          setCards(resetCards);
-          setFlippedCards([]);
-        }, 1000);
+      // Check if the cards match
+      if (firstCard.character === secondCard.character) {
+        // Mark cards as matched
+        const matchedCards = [...cards];
+        matchedCards[firstCardIndex].isMatched = true;
+        matchedCards[secondCardIndex].isMatched = true;
+        setCards(matchedCards);
+
+        const newMatchedPairs = [...matchedPairs, firstCard.character];
+        setMatchedPairs(newMatchedPairs);
+        
+        // Check if game is won
+        if (newMatchedPairs.length === uniqueLetters.length) {
+          setGameWon(true);
+          setIsPlaying(false);
+        }
       }
+      
+      // Clear flipped cards after delay
+      setTimeout(() => {
+        setFlippedCards([]);
+      }, 1000);
     }
   };
 
@@ -189,7 +195,7 @@ const LetterMemoryGame: React.FC = () => {
               <motion.div
                 className="w-full h-full relative"
                 style={{ transformStyle: 'preserve-3d' }}
-                animate={{ rotateY: card.isFlipped ? 180 : 0 }}
+                animate={{ rotateY: card.isMatched ? 180 : 0 }}
                 transition={{ duration: 0.5 }}
               >
                 {/* Card Back */}
@@ -205,17 +211,21 @@ const LetterMemoryGame: React.FC = () => {
                   className="absolute inset-0 bg-white flex flex-col items-center justify-center backface-hidden p-2"
                   style={{ transform: 'rotateY(180deg)' }}
                 >
-                  <div className="text-5xl sm:text-6xl md:text-7xl font-bold text-purple-600">
-                    {card.letter.letter}
-                  </div>
-                  {card.isMatched && (
-                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/90">
-                      <span className="text-5xl mb-3">😊</span>
-                      <p className="text-lg sm:text-xl font-bold text-purple-600 text-center px-2">
-                        {card.letter.example}
-                      </p>
+                  <div className="relative w-full h-full">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-6xl sm:text-7xl md:text-8xl font-bold text-purple-600">
+                        {card.character}
+                      </div>
                     </div>
-                  )}
+                    {card.isMatched && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-white/90 rounded-lg">
+                        <div className="text-center">
+                          <span className="text-5xl mb-2">✨</span>
+                          <p className="text-xl font-bold text-purple-600">{card.example}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </motion.div>
               </motion.div>
             </motion.div>
