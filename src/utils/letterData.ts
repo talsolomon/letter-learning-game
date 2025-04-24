@@ -2,49 +2,59 @@ import { Letter } from './types';
 
 export const letters: Letter[] = [
   {
-    letter: "A",
-    imageUrl: "/letters/A.png",
-    description: "The first letter of the alphabet!",
-    example: "Apple",
-    funFact: "A comes from the ancient Egyptian hieroglyph of an ox head!",
-    funFactReference: "https://www.britannica.com/topic/A-letter",
-    soundUrl: "/sounds/A.mp3"
+    type: 'letter',
+    name: 'Letter A',
+    character: 'A',
+    upperCase: 'A',
+    lowerCase: 'a',
+    phonetic: '/eɪ/',
+    example: 'Apple starts with A',
+    funFact: 'A is the first letter of the alphabet and comes from the Phoenician letter aleph, meaning ox.',
+    funFactReference: 'https://www.britannica.com/topic/A-letter'
   },
   {
-    letter: "B",
-    imageUrl: "/letters/B.png",
-    description: "The second letter of the alphabet!",
-    example: "Banana",
-    funFact: "B was originally drawn as a house in ancient Egyptian hieroglyphs!",
-    funFactReference: "https://www.britannica.com/topic/B-letter",
-    soundUrl: "/sounds/B.mp3"
+    type: 'letter',
+    name: 'Letter B',
+    character: 'B',
+    upperCase: 'B',
+    lowerCase: 'b',
+    phonetic: '/biː/',
+    example: 'Ball starts with B',
+    funFact: 'The letter B comes from the Egyptian hieroglyph for house.',
+    funFactReference: 'https://www.britannica.com/topic/B-letter'
   },
   {
-    letter: "C",
-    imageUrl: "/letters/C.png",
-    description: "The third letter of the alphabet!",
-    example: "Cat",
-    funFact: "C comes from the ancient Phoenician letter 'gimel', which meant camel!",
-    funFactReference: "https://www.britannica.com/topic/C-letter",
-    soundUrl: "/sounds/C.mp3"
+    type: 'letter',
+    name: 'Letter C',
+    character: 'C',
+    upperCase: 'C',
+    lowerCase: 'c',
+    phonetic: '/siː/',
+    example: 'Cat starts with C',
+    funFact: 'C was originally the same letter as G in the ancient alphabet.',
+    funFactReference: 'https://www.britannica.com/topic/C-letter'
   },
   {
-    letter: "D",
-    imageUrl: "/letters/D.png",
-    description: "The fourth letter of the alphabet!",
-    example: "Dog",
-    funFact: "D was originally a pictograph of a door in ancient Semitic writing!",
-    funFactReference: "https://www.britannica.com/topic/D-letter",
-    soundUrl: "/sounds/D.mp3"
+    type: 'letter',
+    name: 'Letter D',
+    character: 'D',
+    upperCase: 'D',
+    lowerCase: 'd',
+    phonetic: '/diː/',
+    example: 'Dog starts with D',
+    funFact: 'The letter D evolved from an ancient pictograph of a door.',
+    funFactReference: 'https://www.britannica.com/topic/D-letter'
   },
   {
-    letter: "E",
-    imageUrl: "/letters/E.png",
-    description: "The fifth letter of the alphabet!",
-    example: "Elephant",
-    funFact: "E is the most commonly used letter in the English language!",
-    funFactReference: "https://www.britannica.com/topic/E-letter",
-    soundUrl: "/sounds/E.mp3"
+    type: 'letter',
+    name: 'Letter E',
+    character: 'E',
+    upperCase: 'E',
+    lowerCase: 'e',
+    phonetic: '/iː/',
+    example: 'Elephant starts with E',
+    funFact: 'E is the most commonly used letter in English.',
+    funFactReference: 'https://www.britannica.com/topic/E-letter'
   },
   {
     letter: "F",
