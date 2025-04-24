@@ -48,7 +48,7 @@ const LearnLetters: React.FC = () => {
 
     setIsSpeaking(true);
     const letterToSpeak = currentLetter;
-    const utterance = new SpeechSynthesisUtterance(`${letterToSpeak.letter}. As in ${letterToSpeak.example}. ${letterToSpeak.description}`);
+    const utterance = new SpeechSynthesisUtterance(`${letterToSpeak.character}. As in ${letterToSpeak.example}. ${letterToSpeak.funFact}`);
     utterance.onend = () => setIsSpeaking(false);
     window.speechSynthesis.speak(utterance);
   };
@@ -128,8 +128,8 @@ const LearnLetters: React.FC = () => {
               className="relative cursor-pointer w-full flex flex-col items-center"
               onClick={handleLetterClick}
             >
-              <div className="text-9xl sm:text-[11rem] md:text-[13rem] lg:text-[15rem] font-bold text-purple-600 mb-6">
-                {currentLetter.letter}
+              <div className="text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-bold text-purple-600 mb-8">
+                {currentLetter.character}
               </div>
               <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg" />
             </motion.div>
@@ -139,7 +139,7 @@ const LearnLetters: React.FC = () => {
                 {currentLetter.example}
               </h2>
               <p className="text-xl sm:text-2xl text-gray-600 break-words leading-relaxed mb-3">
-                {currentLetter.description}
+                {currentLetter.funFact}
               </p>
             </div>
             
@@ -204,8 +204,8 @@ const LearnLetters: React.FC = () => {
                   {/* Left Column: Info */}
                   <div className="space-y-6 flex flex-col">
                     <div>
-                      <h3 className="text-5xl font-bold text-purple-800 mb-6">{currentLetter.letter}</h3>
-                      <p className="text-2xl text-gray-700 leading-relaxed">{currentLetter.description}</p>
+                      <h3 className="text-5xl font-bold text-purple-800 mb-6">{currentLetter.character}</h3>
+                      <p className="text-2xl text-gray-700 leading-relaxed">{currentLetter.funFact}</p>
                     </div>
                     
                     <div className="space-y-6">
@@ -223,8 +223,8 @@ const LearnLetters: React.FC = () => {
                   
                   {/* Right Column: Letter and Learn More Button */}
                   <div className="flex flex-col items-center justify-start space-y-6 pt-4 md:pt-0">
-                    <div className="text-9xl sm:text-[11rem] md:text-[13rem] lg:text-[15rem] font-bold text-purple-600 mb-6">
-                      {currentLetter.letter}
+                    <div className="text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-bold text-purple-600 mb-8">
+                      {currentLetter.character}
                     </div>
                     
                     <div className="w-full max-w-md pt-4">
