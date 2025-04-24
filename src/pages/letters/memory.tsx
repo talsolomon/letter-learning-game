@@ -5,6 +5,7 @@ import BigButton from '@/components/BigButton';
 import { letters } from '@/utils/data/letters';
 import { Letter } from '@/utils/types';
 
+// Memory game component for learning letters
 type Card = Letter & {
   id: number;
   isMatched: boolean;
