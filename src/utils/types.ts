@@ -7,11 +7,20 @@ export interface LearningItem {
 }
 
 // Specific types for different learning areas
-export interface Flag extends LearningItem {
+export interface Flag {
+  id: string;
   type: 'flag';
-  imageUrl: string;
-  region: string;
+  name: string;
   country: string;
+  flagUrl: string;
+  imageUrl: string;
+  description: string;
+  region: string;
+  capital?: string;
+  population?: string;
+  language?: string;
+  funFact?: string;
+  funFactReference?: string;
 }
 
 export interface Number extends LearningItem {
@@ -42,16 +51,4 @@ export interface LearningArea {
   path: string;
   type: 'flags' | 'numbers' | 'letters';
   color: string;
-}
-
-export interface Flag {
-  country: string;
-  flagUrl: string;
-  description: string;
-  region: string;
-  capital?: string;
-  population?: string;
-  language?: string;
-  funFact?: string;
-  funFactReference?: string;
 } 
