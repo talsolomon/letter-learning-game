@@ -48,7 +48,9 @@ const FlagCard: React.FC<FlagCardProps> = ({
           }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-white text-xl font-bold">?</span>
+          <div className="text-6xl sm:text-7xl md:text-8xl font-bold text-purple-600">
+            {country}
+          </div>
         </motion.div>
       )}
     </motion.div>
