@@ -2,8 +2,12 @@ import { Flag } from '../types';
 
 export const southAmericaFlags: Flag[] = [
   {
+    id: "br",
+    type: "flag",
+    name: "Brazil",
     country: "Brazil",
     flagUrl: "https://flagcdn.com/w320/br.png",
+    imageUrl: "https://flagcdn.com/w320/br.png",
     description: "A green field with a yellow diamond and a blue circle with stars!",
     region: "South America",
     capital: "Brasília",
@@ -13,8 +17,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Brazil"
   },
   {
+    id: "ar",
+    type: "flag",
+    name: "Argentina",
     country: "Argentina",
     flagUrl: "https://flagcdn.com/w320/ar.png",
+    imageUrl: "https://flagcdn.com/w320/ar.png",
     description: "Three horizontal stripes of light blue, white, and light blue with a sun in the center!",
     region: "South America",
     capital: "Buenos Aires",
@@ -24,8 +32,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Argentina"
   },
   {
+    id: "pe",
+    type: "flag",
+    name: "Peru",
     country: "Peru",
     flagUrl: "https://flagcdn.com/w320/pe.png",
+    imageUrl: "https://flagcdn.com/w320/pe.png",
     description: "Three vertical stripes of red, white, and red with the national coat of arms!",
     region: "South America",
     capital: "Lima",
@@ -35,8 +47,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Peru"
   },
   {
+    id: "co",
+    type: "flag",
+    name: "Colombia",
     country: "Colombia",
     flagUrl: "https://flagcdn.com/w320/co.png",
+    imageUrl: "https://flagcdn.com/w320/co.png",
     description: "Three horizontal stripes of yellow, blue, and red!",
     region: "South America",
     capital: "Bogotá",
@@ -46,8 +62,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Colombia"
   },
   {
+    id: "cl",
+    type: "flag",
+    name: "Chile",
     country: "Chile",
     flagUrl: "https://flagcdn.com/w320/cl.png",
+    imageUrl: "https://flagcdn.com/w320/cl.png",
     description: "Two horizontal stripes of white and red with a blue square and white star!",
     region: "South America",
     capital: "Santiago",
@@ -57,8 +77,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Chile"
   },
   {
+    id: "ve",
+    type: "flag",
+    name: "Venezuela",
     country: "Venezuela",
     flagUrl: "https://flagcdn.com/w320/ve.png",
+    imageUrl: "https://flagcdn.com/w320/ve.png",
     description: "Three horizontal stripes of yellow, blue, and red with an arc of stars!",
     region: "South America",
     capital: "Caracas",
@@ -68,8 +92,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Venezuela"
   },
   {
+    id: "ec",
+    type: "flag",
+    name: "Ecuador",
     country: "Ecuador",
     flagUrl: "https://flagcdn.com/w320/ec.png",
+    imageUrl: "https://flagcdn.com/w320/ec.png",
     description: "Three horizontal stripes of yellow, blue, and red with the national coat of arms!",
     region: "South America",
     capital: "Quito",
@@ -79,8 +107,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Ecuador"
   },
   {
+    id: "bo",
+    type: "flag",
+    name: "Bolivia",
     country: "Bolivia",
     flagUrl: "https://flagcdn.com/w320/bo.png",
+    imageUrl: "https://flagcdn.com/w320/bo.png",
     description: "Three horizontal stripes of red, yellow, and green with the national coat of arms!",
     region: "South America",
     capital: "Sucre",
@@ -90,8 +122,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Bolivia"
   },
   {
+    id: "py",
+    type: "flag",
+    name: "Paraguay",
     country: "Paraguay",
     flagUrl: "https://flagcdn.com/w320/py.png",
+    imageUrl: "https://flagcdn.com/w320/py.png",
     description: "Three horizontal stripes of red, white, and blue with different emblems on each side!",
     region: "South America",
     capital: "Asunción",
@@ -101,8 +137,12 @@ export const southAmericaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Paraguay"
   },
   {
+    id: "uy",
+    type: "flag",
+    name: "Uruguay",
     country: "Uruguay",
     flagUrl: "https://flagcdn.com/w320/uy.png",
+    imageUrl: "https://flagcdn.com/w320/uy.png",
     description: "Nine horizontal stripes of white and blue with a sun in the corner!",
     region: "South America",
     capital: "Montevideo",

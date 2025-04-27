@@ -2,8 +2,12 @@ import { Flag } from '../types';
 
 export const oceaniaFlags: Flag[] = [
   {
+    id: "au",
+    type: "flag",
+    name: "Australia",
     country: "Australia",
     flagUrl: "https://flagcdn.com/w320/au.png",
+    imageUrl: "https://flagcdn.com/w320/au.png",
     description: "A blue field with the Union Jack in the canton and a large white star and the Southern Cross!",
     region: "Oceania",
     capital: "Canberra",
@@ -13,8 +17,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Australia"
   },
   {
+    id: "nz",
+    type: "flag",
+    name: "New Zealand",
     country: "New Zealand",
     flagUrl: "https://flagcdn.com/w320/nz.png",
+    imageUrl: "https://flagcdn.com/w320/nz.png",
     description: "A blue field with the Union Jack in the canton and four red stars with white borders!",
     region: "Oceania",
     capital: "Wellington",
@@ -24,8 +32,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-New-Zealand"
   },
   {
+    id: "fj",
+    type: "flag",
+    name: "Fiji",
     country: "Fiji",
     flagUrl: "https://flagcdn.com/w320/fj.png",
+    imageUrl: "https://flagcdn.com/w320/fj.png",
     description: "A light blue field with the Union Jack in the canton and the Fijian coat of arms!",
     region: "Oceania",
     capital: "Suva",
@@ -35,8 +47,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Fiji"
   },
   {
+    id: "pg",
+    type: "flag",
+    name: "Papua New Guinea",
     country: "Papua New Guinea",
     flagUrl: "https://flagcdn.com/w320/pg.png",
+    imageUrl: "https://flagcdn.com/w320/pg.png",
     description: "Divided diagonally with black and red triangles and the Southern Cross and bird of paradise!",
     region: "Oceania",
     capital: "Port Moresby",
@@ -46,8 +62,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Papua-New-Guinea"
   },
   {
+    id: "sb",
+    type: "flag",
+    name: "Solomon Islands",
     country: "Solomon Islands",
     flagUrl: "https://flagcdn.com/w320/sb.png",
+    imageUrl: "https://flagcdn.com/w320/sb.png",
     description: "Divided diagonally with blue and green triangles and five white stars!",
     region: "Oceania",
     capital: "Honiara",
@@ -57,8 +77,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Solomon-Islands"
   },
   {
+    id: "vu",
+    type: "flag",
+    name: "Vanuatu",
     country: "Vanuatu",
     flagUrl: "https://flagcdn.com/w320/vu.png",
+    imageUrl: "https://flagcdn.com/w320/vu.png",
     description: "Red and green horizontal stripes with a black triangle and yellow Y-shape!",
     region: "Oceania",
     capital: "Port Vila",
@@ -68,8 +92,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Vanuatu"
   },
   {
+    id: "ws",
+    type: "flag",
+    name: "Samoa",
     country: "Samoa",
     flagUrl: "https://flagcdn.com/w320/ws.png",
+    imageUrl: "https://flagcdn.com/w320/ws.png",
     description: "A red field with a blue rectangle in the canton containing the Southern Cross!",
     region: "Oceania",
     capital: "Apia",
@@ -79,8 +107,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Samoa"
   },
   {
+    id: "to",
+    type: "flag",
+    name: "Tonga",
     country: "Tonga",
     flagUrl: "https://flagcdn.com/w320/to.png",
+    imageUrl: "https://flagcdn.com/w320/to.png",
     description: "A red field with a white rectangle in the canton containing a red cross!",
     region: "Oceania",
     capital: "Nuku'alofa",
@@ -90,8 +122,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Tonga"
   },
   {
+    id: "ki",
+    type: "flag",
+    name: "Kiribati",
     country: "Kiribati",
     flagUrl: "https://flagcdn.com/w320/ki.png",
+    imageUrl: "https://flagcdn.com/w320/ki.png",
     description: "Red and blue horizontal stripes with a yellow frigatebird and sun!",
     region: "Oceania",
     capital: "South Tarawa",
@@ -101,8 +137,12 @@ export const oceaniaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Kiribati"
   },
   {
+    id: "tv",
+    type: "flag",
+    name: "Tuvalu",
     country: "Tuvalu",
     flagUrl: "https://flagcdn.com/w320/tv.png",
+    imageUrl: "https://flagcdn.com/w320/tv.png",
     description: "A light blue field with the Union Jack in the canton and nine yellow stars!",
     region: "Oceania",
     capital: "Funafuti",

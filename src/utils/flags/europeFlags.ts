@@ -2,8 +2,12 @@ import { Flag } from '../types';
 
 export const europeFlags: Flag[] = [
   {
+    id: "fr",
+    type: "flag",
+    name: "France",
     country: "France",
     flagUrl: "https://flagcdn.com/w320/fr.png",
+    imageUrl: "https://flagcdn.com/w320/fr.png",
     description: "Three vertical bands of blue, white, and red!",
     region: "Europe",
     capital: "Paris",
@@ -13,8 +17,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-France"
   },
   {
+    id: "de",
+    type: "flag",
+    name: "Germany",
     country: "Germany",
     flagUrl: "https://flagcdn.com/w320/de.png",
+    imageUrl: "https://flagcdn.com/w320/de.png",
     description: "Three horizontal bands of black, red, and gold!",
     region: "Europe",
     capital: "Berlin",
@@ -24,8 +32,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Germany"
   },
   {
+    id: "it",
+    type: "flag",
+    name: "Italy",
     country: "Italy",
     flagUrl: "https://flagcdn.com/w320/it.png",
+    imageUrl: "https://flagcdn.com/w320/it.png",
     description: "Three vertical bands of green, white, and red!",
     region: "Europe",
     capital: "Rome",
@@ -35,8 +47,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Italy"
   },
   {
+    id: "gb",
+    type: "flag",
+    name: "United Kingdom",
     country: "United Kingdom",
     flagUrl: "https://flagcdn.com/w320/gb.png",
+    imageUrl: "https://flagcdn.com/w320/gb.png",
     description: "A blue field with the combined crosses of St. George, St. Andrew, and St. Patrick!",
     region: "Europe",
     capital: "London",
@@ -46,8 +62,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-the-United-Kingdom"
   },
   {
+    id: "es",
+    type: "flag",
+    name: "Spain",
     country: "Spain",
     flagUrl: "https://flagcdn.com/w320/es.png",
+    imageUrl: "https://flagcdn.com/w320/es.png",
     description: "Two horizontal red bands with a yellow band in between!",
     region: "Europe",
     capital: "Madrid",
@@ -57,8 +77,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Spain"
   },
   {
+    id: "pl",
+    type: "flag",
+    name: "Poland",
     country: "Poland",
     flagUrl: "https://flagcdn.com/w320/pl.png",
+    imageUrl: "https://flagcdn.com/w320/pl.png",
     description: "Two horizontal bands of white and red!",
     region: "Europe",
     capital: "Warsaw",
@@ -68,8 +92,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Poland"
   },
   {
+    id: "ua",
+    type: "flag",
+    name: "Ukraine",
     country: "Ukraine",
     flagUrl: "https://flagcdn.com/w320/ua.png",
+    imageUrl: "https://flagcdn.com/w320/ua.png",
     description: "Two horizontal bands of blue and yellow!",
     region: "Europe",
     capital: "Kyiv",
@@ -79,8 +107,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Ukraine"
   },
   {
+    id: "nl",
+    type: "flag",
+    name: "Netherlands",
     country: "Netherlands",
     flagUrl: "https://flagcdn.com/w320/nl.png",
+    imageUrl: "https://flagcdn.com/w320/nl.png",
     description: "Three horizontal bands of red, white, and blue!",
     region: "Europe",
     capital: "Amsterdam",
@@ -90,8 +122,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-the-Netherlands"
   },
   {
+    id: "gr",
+    type: "flag",
+    name: "Greece",
     country: "Greece",
     flagUrl: "https://flagcdn.com/w320/gr.png",
+    imageUrl: "https://flagcdn.com/w320/gr.png",
     description: "Nine horizontal stripes of blue and white with a cross in the canton!",
     region: "Europe",
     capital: "Athens",
@@ -101,8 +137,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Greece"
   },
   {
+    id: "pt",
+    type: "flag",
+    name: "Portugal",
     country: "Portugal",
     flagUrl: "https://flagcdn.com/w320/pt.png",
+    imageUrl: "https://flagcdn.com/w320/pt.png",
     description: "A field of green and red with the national coat of arms in the center!",
     region: "Europe",
     capital: "Lisbon",
@@ -112,8 +152,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Portugal"
   },
   {
+    id: "se",
+    type: "flag",
+    name: "Sweden",
     country: "Sweden",
     flagUrl: "https://flagcdn.com/w320/se.png",
+    imageUrl: "https://flagcdn.com/w320/se.png",
     description: "A blue field with a yellow Nordic cross!",
     region: "Europe",
     capital: "Stockholm",
@@ -123,8 +167,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Sweden"
   },
   {
+    id: "no",
+    type: "flag",
+    name: "Norway",
     country: "Norway",
     flagUrl: "https://flagcdn.com/w320/no.png",
+    imageUrl: "https://flagcdn.com/w320/no.png",
     description: "A red field with a blue Nordic cross outlined in white!",
     region: "Europe",
     capital: "Oslo",
@@ -134,8 +182,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Norway"
   },
   {
+    id: "dk",
+    type: "flag",
+    name: "Denmark",
     country: "Denmark",
     flagUrl: "https://flagcdn.com/w320/dk.png",
+    imageUrl: "https://flagcdn.com/w320/dk.png",
     description: "A red field with a white Nordic cross!",
     region: "Europe",
     capital: "Copenhagen",
@@ -145,8 +197,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Denmark"
   },
   {
+    id: "fi",
+    type: "flag",
+    name: "Finland",
     country: "Finland",
     flagUrl: "https://flagcdn.com/w320/fi.png",
+    imageUrl: "https://flagcdn.com/w320/fi.png",
     description: "A white field with a blue Nordic cross!",
     region: "Europe",
     capital: "Helsinki",
@@ -156,8 +212,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Finland"
   },
   {
+    id: "ie",
+    type: "flag",
+    name: "Ireland",
     country: "Ireland",
     flagUrl: "https://flagcdn.com/w320/ie.png",
+    imageUrl: "https://flagcdn.com/w320/ie.png",
     description: "Three vertical bands of green, white, and orange!",
     region: "Europe",
     capital: "Dublin",
@@ -167,8 +227,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Ireland"
   },
   {
+    id: "be",
+    type: "flag",
+    name: "Belgium",
     country: "Belgium",
     flagUrl: "https://flagcdn.com/w320/be.png",
+    imageUrl: "https://flagcdn.com/w320/be.png",
     description: "Three vertical stripes of black, yellow, and red!",
     region: "Europe",
     capital: "Brussels",
@@ -178,8 +242,12 @@ export const europeFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Belgium"
   },
   {
+    id: "ch",
+    type: "flag",
+    name: "Switzerland",
     country: "Switzerland",
     flagUrl: "https://flagcdn.com/w320/ch.png",
+    imageUrl: "https://flagcdn.com/w320/ch.png",
     description: "A red square with a white cross in the center!",
     region: "Europe",
     capital: "Bern",

@@ -106,20 +106,20 @@ const LearnMode: React.FC = () => {
       <div className="absolute top-4 left-4 flex gap-3">
         <button
           onClick={() => router.push('/')}
-          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-200 text-sm font-bold hover:scale-105 transform flex items-center gap-2"
+          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-200 text-lg font-bold hover:scale-105 transform flex items-center gap-2"
         >
           <span>🏠</span> Home
         </button>
         <button
           onClick={() => router.push('/flags')}
-          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-200 text-sm font-bold hover:scale-105 transform flex items-center gap-2"
+          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-200 text-lg font-bold hover:scale-105 transform flex items-center gap-2"
         >
           <span>←</span> Back
         </button>
       </div>
 
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center text-pink-600 mb-6 animate-bounce-slow">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-pink-600 mb-8 animate-bounce-slow">
           📚 Learn Flags! 📚
         </h1>
 
@@ -137,20 +137,20 @@ const LearnMode: React.FC = () => {
               <img
                 src={currentFlag.flagUrl}
                 alt={`Flag of ${currentFlag.country}`}
-                className="w-48 sm:w-56 md:w-64 h-auto rounded-lg shadow-md mb-4"
+                className="w-56 sm:w-64 md:w-72 lg:w-80 h-auto rounded-lg shadow-md mb-6"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg" />
             </motion.div>
 
             <div className="text-center w-full max-w-md">
-              <h2 className="text-2xl sm:text-3xl font-bold text-purple-700 mb-2 break-words">
+              <h2 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-4 break-words">
                 {currentFlag.country}
               </h2>
-              <p className="text-lg text-gray-600 break-words leading-relaxed mb-2">
+              <p className="text-xl text-gray-600 break-words leading-relaxed mb-4">
                 {currentFlag.description}
               </p>
-              <div className="w-full border-t border-gray-200 pt-2 mt-2">
-                <p className="text-sm text-purple-600 font-medium">
+              <div className="w-full border-t border-gray-200 pt-3 mt-3">
+                <p className="text-lg text-purple-600 font-medium">
                   Continent: {currentFlag.region}
                 </p>
               </div>
@@ -164,14 +164,14 @@ const LearnMode: React.FC = () => {
               icon="⬅️"
               onClick={handlePrevious}
               disabled={isFirstFlag}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-xl px-8 py-4"
             >
               Previous
             </BigButton>
             <BigButton
               icon="🔊"
               onClick={speakFlagInfo}
-              className={`shadow-md hover:scale-105 transform transition-all duration-200 ${
+              className={`shadow-md hover:scale-105 transform transition-all duration-200 text-xl px-8 py-4 ${
                 isSpeaking 
                   ? "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
                   : "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
@@ -183,7 +183,7 @@ const LearnMode: React.FC = () => {
               icon="➡️"
               onClick={handleNext}
               disabled={isLastFlag}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-xl px-8 py-4"
             >
               Next
             </BigButton>

@@ -13,7 +13,7 @@ export const africaFlags: Flag[] = [
     capital: "Pretoria",
     population: "60 million",
     language: "11 official languages",
-    funFact: "A colorful flag with six colors and a Y-shape in the center!",
+    funFact: "South Africa has three capital cities!",
     funFactReference: "https://www.britannica.com/topic/flag-of-South-Africa"
   },
   {
@@ -77,8 +77,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Morocco"
   },
   {
+    id: "tz",
+    type: "flag",
+    name: "Tanzania",
     country: "Tanzania",
     flagUrl: "https://flagcdn.com/w320/tz.png",
+    imageUrl: "https://flagcdn.com/w320/tz.png",
     description: "A diagonal yellow-edged black band between triangles of green and blue!",
     region: "Africa",
     capital: "Dodoma",
@@ -88,8 +92,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Tanzania"
   },
   {
+    id: "ug",
+    type: "flag",
+    name: "Uganda",
     country: "Uganda",
     flagUrl: "https://flagcdn.com/w320/ug.png",
+    imageUrl: "https://flagcdn.com/w320/ug.png",
     description: "Six horizontal stripes of black, yellow, red with a white disc and crane in the center!",
     region: "Africa",
     capital: "Kampala",
@@ -99,8 +107,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Uganda"
   },
   {
+    id: "sn",
+    type: "flag",
+    name: "Senegal",
     country: "Senegal",
     flagUrl: "https://flagcdn.com/w320/sn.png",
+    imageUrl: "https://flagcdn.com/w320/sn.png",
     description: "Three vertical bands of green, yellow, and red with a green star in the center!",
     region: "Africa",
     capital: "Dakar",
@@ -110,8 +122,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Senegal"
   },
   {
+    id: "rw",
+    type: "flag",
+    name: "Rwanda",
     country: "Rwanda",
     flagUrl: "https://flagcdn.com/w320/rw.png",
+    imageUrl: "https://flagcdn.com/w320/rw.png",
     description: "Three horizontal bands of blue, yellow, and green with a sun in the blue band!",
     region: "Africa",
     capital: "Kigali",
@@ -121,8 +137,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Rwanda"
   },
   {
+    id: "mg",
+    type: "flag",
+    name: "Madagascar",
     country: "Madagascar",
     flagUrl: "https://flagcdn.com/w320/mg.png",
+    imageUrl: "https://flagcdn.com/w320/mg.png",
     description: "A white vertical band on the hoist side and red and green horizontal bands!",
     region: "Africa",
     capital: "Antananarivo",
@@ -132,8 +152,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Madagascar"
   },
   {
+    id: "cm",
+    type: "flag",
+    name: "Cameroon",
     country: "Cameroon",
     flagUrl: "https://flagcdn.com/w320/cm.png",
+    imageUrl: "https://flagcdn.com/w320/cm.png",
     description: "Three vertical bands of green, red, and yellow with a gold star in the center!",
     region: "Africa",
     capital: "Yaoundé",
@@ -143,8 +167,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Cameroon"
   },
   {
+    id: "ci",
+    type: "flag",
+    name: "Côte d'Ivoire",
     country: "Côte d'Ivoire",
     flagUrl: "https://flagcdn.com/w320/ci.png",
+    imageUrl: "https://flagcdn.com/w320/ci.png",
     description: "Three vertical bands of orange, white, and green!",
     region: "Africa",
     capital: "Yamoussoukro",
@@ -154,8 +182,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Côte-d'Ivoire"
   },
   {
+    id: "ao",
+    type: "flag",
+    name: "Angola",
     country: "Angola",
     flagUrl: "https://flagcdn.com/w320/ao.png",
+    imageUrl: "https://flagcdn.com/w320/ao.png",
     description: "Two horizontal bands of red and black with a yellow emblem in the center!",
     region: "Africa",
     capital: "Luanda",
@@ -165,8 +197,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Angola"
   },
   {
+    id: "dz",
+    type: "flag",
+    name: "Algeria",
     country: "Algeria",
     flagUrl: "https://flagcdn.com/w320/dz.png",
+    imageUrl: "https://flagcdn.com/w320/dz.png",
     description: "Two vertical stripes of green and white with a red crescent and star in the center!",
     region: "Africa",
     capital: "Algiers",
@@ -176,8 +212,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Algeria"
   },
   {
+    id: "zw",
+    type: "flag",
+    name: "Zimbabwe",
     country: "Zimbabwe",
     flagUrl: "https://flagcdn.com/w320/zw.png",
+    imageUrl: "https://flagcdn.com/w320/zw.png",
     description: "Seven horizontal stripes with a white triangle containing a red star and bird!",
     region: "Africa",
     capital: "Harare",
@@ -187,8 +227,12 @@ export const africaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Zimbabwe"
   },
   {
+    id: "mz",
+    type: "flag",
+    name: "Mozambique",
     country: "Mozambique",
     flagUrl: "https://flagcdn.com/w320/mz.png",
+    imageUrl: "https://flagcdn.com/w320/mz.png",
     description: "Three horizontal stripes with a red triangle containing a yellow star and other symbols!",
     region: "Africa",
     capital: "Maputo",

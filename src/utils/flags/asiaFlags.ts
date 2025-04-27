@@ -2,8 +2,12 @@ import { Flag } from '../types';
 
 export const asiaFlags: Flag[] = [
   {
+    id: "jp",
+    type: "flag",
+    name: "Japan",
     country: "Japan",
     flagUrl: "https://flagcdn.com/w320/jp.png",
+    imageUrl: "https://flagcdn.com/w320/jp.png",
     description: "A white rectangle with a red circle in the center representing the sun!",
     region: "Asia",
     capital: "Tokyo",
@@ -13,8 +17,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Japan"
   },
   {
+    id: "cn",
+    type: "flag",
+    name: "China",
     country: "China",
     flagUrl: "https://flagcdn.com/w320/cn.png",
+    imageUrl: "https://flagcdn.com/w320/cn.png",
     description: "A red field with five yellow stars in the canton!",
     region: "Asia",
     capital: "Beijing",
@@ -24,8 +32,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-China"
   },
   {
+    id: "in",
+    type: "flag",
+    name: "India",
     country: "India",
     flagUrl: "https://flagcdn.com/w320/in.png",
+    imageUrl: "https://flagcdn.com/w320/in.png",
     description: "Three horizontal bands of saffron, white, and green with a blue wheel in the center!",
     region: "Asia",
     capital: "New Delhi",
@@ -35,8 +47,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-India"
   },
   {
+    id: "kr",
+    type: "flag",
+    name: "South Korea",
     country: "South Korea",
     flagUrl: "https://flagcdn.com/w320/kr.png",
+    imageUrl: "https://flagcdn.com/w320/kr.png",
     description: "A white field with a red and blue circle in the center and black trigrams!",
     region: "Asia",
     capital: "Seoul",
@@ -46,8 +62,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-South-Korea"
   },
   {
+    id: "vn",
+    type: "flag",
+    name: "Vietnam",
     country: "Vietnam",
     flagUrl: "https://flagcdn.com/w320/vn.png",
+    imageUrl: "https://flagcdn.com/w320/vn.png",
     description: "A red field with a large yellow star in the center!",
     region: "Asia",
     capital: "Hanoi",
@@ -57,8 +77,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Vietnam"
   },
   {
+    id: "th",
+    type: "flag",
+    name: "Thailand",
     country: "Thailand",
     flagUrl: "https://flagcdn.com/w320/th.png",
+    imageUrl: "https://flagcdn.com/w320/th.png",
     description: "Five horizontal stripes of red, white, blue, white, and red!",
     region: "Asia",
     capital: "Bangkok",
@@ -68,8 +92,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Thailand"
   },
   {
+    id: "id",
+    type: "flag",
+    name: "Indonesia",
     country: "Indonesia",
     flagUrl: "https://flagcdn.com/w320/id.png",
+    imageUrl: "https://flagcdn.com/w320/id.png",
     description: "Two horizontal bands of red and white!",
     region: "Asia",
     capital: "Jakarta",
@@ -79,8 +107,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Indonesia"
   },
   {
+    id: "my",
+    type: "flag",
+    name: "Malaysia",
     country: "Malaysia",
     flagUrl: "https://flagcdn.com/w320/my.png",
+    imageUrl: "https://flagcdn.com/w320/my.png",
     description: "Red and white stripes with a blue canton containing a crescent moon and star!",
     region: "Asia",
     capital: "Kuala Lumpur",
@@ -90,8 +122,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Malaysia"
   },
   {
+    id: "sg",
+    type: "flag",
+    name: "Singapore",
     country: "Singapore",
     flagUrl: "https://flagcdn.com/w320/sg.png",
+    imageUrl: "https://flagcdn.com/w320/sg.png",
     description: "Two horizontal bands of red and white with a crescent moon and five stars!",
     region: "Asia",
     capital: "Singapore",
@@ -101,8 +137,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Singapore"
   },
   {
+    id: "ph",
+    type: "flag",
+    name: "Philippines",
     country: "Philippines",
     flagUrl: "https://flagcdn.com/w320/ph.png",
+    imageUrl: "https://flagcdn.com/w320/ph.png",
     description: "Two horizontal bands of blue and red with a white triangle and golden sun with stars!",
     region: "Asia",
     capital: "Manila",
@@ -112,8 +152,12 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-the-Philippines"
   },
   {
+    id: "il",
+    type: "flag",
+    name: "Israel",
     country: "Israel",
     flagUrl: "https://flagcdn.com/w320/il.png",
+    imageUrl: "https://flagcdn.com/w320/il.png",
     description: "A white field with two horizontal blue stripes and a blue Star of David!",
     region: "Asia",
     capital: "Jerusalem",
@@ -123,43 +167,63 @@ export const asiaFlags: Flag[] = [
     funFactReference: "https://www.britannica.com/topic/flag-of-Israel"
   },
   {
+    id: "sa",
+    type: "flag",
+    name: "Saudi Arabia",
     country: "Saudi Arabia",
     flagUrl: "https://flagcdn.com/w320/sa.png",
+    imageUrl: "https://flagcdn.com/w320/sa.png",
     description: "A green field with Arabic text and a sword in white!",
     region: "Asia",
     capital: "Riyadh",
     population: "35.3 million",
     language: "Arabic",
-    funFact: "The flag is never flown at half-mast as it contains religious text!"
+    funFact: "The flag is never flown at half-mast as it contains religious text!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Saudi-Arabia"
   },
   {
+    id: "ae",
+    type: "flag",
+    name: "United Arab Emirates",
     country: "United Arab Emirates",
     flagUrl: "https://flagcdn.com/w320/ae.png",
+    imageUrl: "https://flagcdn.com/w320/ae.png",
     description: "Three horizontal stripes of green, white, and black with a red vertical band!",
     region: "Asia",
     capital: "Abu Dhabi",
     population: "9.9 million",
     language: "Arabic",
-    funFact: "The colors represent Arab unity and prosperity!"
+    funFact: "The colors represent Arab unity and prosperity!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-United-Arab-Emirates"
   },
   {
+    id: "ir",
+    type: "flag",
+    name: "Iran",
     country: "Iran",
     flagUrl: "https://flagcdn.com/w320/ir.png",
+    imageUrl: "https://flagcdn.com/w320/ir.png",
     description: "Three horizontal bands of green, white, and red with an emblem in the center!",
     region: "Asia",
     capital: "Tehran",
     population: "85 million",
     language: "Persian",
-    funFact: "The emblem in the center represents the word 'Allah'!"
+    funFact: "The emblem in the center represents the word 'Allah'!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Iran"
   },
   {
+    id: "pk",
+    type: "flag",
+    name: "Pakistan",
     country: "Pakistan",
     flagUrl: "https://flagcdn.com/w320/pk.png",
+    imageUrl: "https://flagcdn.com/w320/pk.png",
     description: "A dark green field with a white crescent moon and star!",
     region: "Asia",
     capital: "Islamabad",
     population: "220.9 million",
     language: "Urdu, English",
-    funFact: "The white stripe represents religious minorities!"
+    funFact: "The white stripe represents religious minorities!",
+    funFactReference: "https://www.britannica.com/topic/flag-of-Pakistan"
   }
 ]; 
