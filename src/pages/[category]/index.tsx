@@ -29,12 +29,14 @@ const CategoryPage: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-pink-200 via-yellow-100 to-purple-100 flex flex-col items-center p-4 sm:p-8">
       {/* Navigation Buttons */}
       <div className="absolute top-4 left-4">
-        <button
+        <BigButton
           onClick={() => router.push('/')}
-          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-200 text-sm font-bold hover:scale-105 transform flex items-center gap-2"
+          icon="🏠"
+          size="small"
+          variant="primary"
         >
-          <span>🏠</span> Home
-        </button>
+          Home
+        </BigButton>
       </div>
 
       <div className="text-center mb-8 sm:mb-16 w-full max-w-4xl">
@@ -48,7 +50,9 @@ const CategoryPage: React.FC = () => {
         <BigButton
           onClick={() => router.push(`/${category}/learn`)}
           icon="📚"
-          className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl child-friendly-button w-full py-8 sm:py-10"
+          size="large"
+          variant="primary"
+          className="w-full"
         >
           Learn {text}
         </BigButton>
@@ -56,7 +60,9 @@ const CategoryPage: React.FC = () => {
         <BigButton
           onClick={() => router.push(`/${category}/memory`)}
           icon="🎮"
-          className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl child-friendly-button w-full py-8 sm:py-10"
+          size="large"
+          variant="primary"
+          className="w-full"
         >
           Memory Game
         </BigButton>

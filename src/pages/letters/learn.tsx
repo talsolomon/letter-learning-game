@@ -151,18 +151,16 @@ const LearnLetters: React.FC = () => {
               icon="⬅️"
               onClick={handlePrevious}
               disabled={isFirstLetter}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6"
+              size="medium"
+              variant="primary"
             >
               Previous
             </BigButton>
             <BigButton
               icon="🔊"
               onClick={speakLetterInfo}
-              className={`shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6 ${
-                isSpeaking 
-                  ? "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
-                  : "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
-              }`}
+              size="medium"
+              variant="primary"
             >
               {isSpeaking ? "Stop" : "Listen"}
             </BigButton>
@@ -170,7 +168,8 @@ const LearnLetters: React.FC = () => {
               icon="➡️"
               onClick={handleNext}
               disabled={isLastLetter}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-2xl px-10 py-6"
+              size="medium"
+              variant="primary"
             >
               Next
             </BigButton>
@@ -232,18 +231,16 @@ const LearnLetters: React.FC = () => {
                         <BigButton 
                           icon="🌐" 
                           onClick={handleReferenceClick}
-                          className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-md hover:scale-105 transform transition-all duration-200 text-7xl px-14 py-8"
+                          size="medium"
+                          variant="primary"
                         >
                           Learn More
                         </BigButton>
                         <BigButton
                           icon="🔊"
                           onClick={speakLetterInfo}
-                          className={`shadow-md hover:scale-105 transform transition-all duration-200 text-7xl px-14 py-8 ${
-                            isSpeaking 
-                              ? "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
-                              : "bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600"
-                          }`}
+                          size="medium"
+                          variant="primary"
                         >
                           {isSpeaking ? "Stop" : "Listen"}
                         </BigButton>

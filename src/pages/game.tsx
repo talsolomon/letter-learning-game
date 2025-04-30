@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import BigButton from '../components/BigButton';
 
 const Game: React.FC = () => {
   const router = useRouter();
@@ -52,22 +54,24 @@ const Game: React.FC = () => {
 
             {/* Buttons */}
             <div className="absolute -bottom-8 left-0 right-0 flex justify-between gap-3 px-4">
-              <button
+              <BigButton
                 onClick={handlePlayAgain}
-                className="w-[48%] h-16 rounded-3xl flex items-center justify-center shadow-xl"
-                style={{ background: 'linear-gradient(to right, #E91E63, #9C27B0)' }}
+                icon="🎮"
+                size="medium"
+                variant="primary"
+                className="w-[48%]"
               >
-                <span className="text-3xl mr-3">🎮</span>
-                <span className="text-white text-2xl font-bold">Play Again</span>
-              </button>
-              <button
+                Play Again
+              </BigButton>
+              <BigButton
                 onClick={() => router.push('/')}
-                className="w-[48%] h-16 rounded-3xl flex items-center justify-center shadow-xl"
-                style={{ background: 'linear-gradient(to right, #2196F3, #9C27B0)' }}
+                icon="🏠"
+                size="medium"
+                variant="secondary"
+                className="w-[48%]"
               >
-                <span className="text-3xl mr-3">🏠</span>
-                <span className="text-white text-2xl font-bold">Home</span>
-              </button>
+                Home
+              </BigButton>
             </div>
           </div>
         </motion.div>
