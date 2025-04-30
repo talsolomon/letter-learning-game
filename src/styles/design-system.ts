@@ -1,29 +1,29 @@
 // Font Sizes
 export const typography = {
   // Headers
-  h1: 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl', // Main page titles
-  h2: 'text-3xl sm:text-4xl md:text-5xl lg:text-6xl', // Section headers
-  h3: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl', // Sub-section headers
-  h4: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl', // Card headers
+  h1: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl', // Main page titles
+  h2: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl', // Section headers
+  h3: 'text-lg sm:text-xl md:text-2xl lg:text-3xl', // Sub-section headers
+  h4: 'text-base sm:text-lg md:text-xl lg:text-2xl', // Card headers
   
   // Body text
-  body1: 'text-lg sm:text-xl md:text-2xl lg:text-3xl', // Large body text
-  body2: 'text-base sm:text-lg md:text-xl lg:text-2xl', // Regular body text
-  body3: 'text-sm sm:text-base md:text-lg lg:text-xl', // Small body text
+  body1: 'text-base sm:text-lg md:text-xl lg:text-2xl', // Large body text
+  body2: 'text-sm sm:text-base md:text-lg lg:text-xl', // Regular body text
+  body3: 'text-xs sm:text-sm md:text-base lg:text-lg', // Small body text
   
   // Button text
-  buttonLarge: 'text-lg sm:text-xl md:text-2xl lg:text-3xl',
-  buttonMedium: 'text-base sm:text-lg md:text-xl lg:text-2xl',
-  buttonSmall: 'text-sm sm:text-base md:text-lg lg:text-xl',
+  buttonLarge: 'text-sm sm:text-base md:text-lg lg:text-xl',
+  buttonMedium: 'text-xs sm:text-sm md:text-base lg:text-lg',
+  buttonSmall: 'text-xs sm:text-xs md:text-sm lg:text-base',
 } as const;
 
 // Spacing
 export const spacing = {
   // Padding
   buttonPadding: {
-    large: 'px-6 py-4 sm:px-8 sm:py-5',
-    medium: 'px-4 py-3 sm:px-6 sm:py-4',
-    small: 'px-3 py-2 sm:px-4 sm:py-3',
+    large: 'px-4 py-2 sm:px-5 sm:py-3',
+    medium: 'px-3 py-2 sm:px-4 sm:py-2',
+    small: 'px-2 py-1 sm:px-3 sm:py-2',
   },
   
   // Margins
@@ -68,9 +68,9 @@ export const colors = {
 export const sizes = {
   // Button sizes
   button: {
-    small: 'h-8 sm:h-10 md:h-12',
-    medium: 'h-10 sm:h-12 md:h-14',
-    large: 'h-12 sm:h-14 md:h-16',
+    small: 'h-6 sm:h-7 md:h-8',
+    medium: 'h-8 sm:h-9 md:h-10',
+    large: 'h-10 sm:h-11 md:h-12',
   },
   
   // Card sizes
