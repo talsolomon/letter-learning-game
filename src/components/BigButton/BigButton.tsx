@@ -1,18 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { typography, spacing, colors, sizes, commonStyles } from '../styles/design-system';
+import { typography, spacing, colors, sizes, commonStyles } from '../../styles/design-system';
+import { BigButtonProps } from './BigButton.types';
 
-interface BigButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  icon?: string;
-  className?: string;
-  disabled?: boolean;
-  size?: 'small' | 'medium' | 'large';
-  variant?: 'primary' | 'secondary';
-}
-
-const BigButton: React.FC<BigButtonProps> = ({ 
+export const BigButton: React.FC<BigButtonProps> = ({ 
   children, 
   onClick, 
   icon, 
@@ -69,6 +60,4 @@ const BigButton: React.FC<BigButtonProps> = ({
       </span>
     </motion.button>
   );
-};
-
-export default BigButton; 
+}; 
